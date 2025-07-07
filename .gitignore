@@ -1,0 +1,94 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+.nyc_output
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# React Native
+*.log
+*.lock
+.expo/
+.expo-shared/
+
+# Electron
+electron-dist/
+
+# Production
+build
+dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local env files
+.env
+.env*.local
+!.env.example
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Turbo
+.turbo
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs
+*.log
+web-server.log
+
+# Temporary files
+tmp/
+temp/
+
+# Build outputs
+out/
+dist/
+build/
+
+# Mobile
+ios/Pods/
+android/.gradle/
+android/app/build/
+*.ipa
+*.apk
+*.aab
+
+# Desktop
+release/

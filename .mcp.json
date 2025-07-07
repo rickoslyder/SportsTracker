@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=rlpxovfeqokutcputuxs"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_47f45cf3bc58815a1b195a12c5c393ba7884f392"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "google-tag-manager-mcp-server": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://gtm-mcp.stape.ai/sse"]
+    },
+    "upstash": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supergateway",
+        "--sse",
+        "https://mcp.upstash.io/sse",
+        "--oauth2Bearer",
+        "rickoslyder@gmail.com:6fb88236-e260-40c9-853e-91fe6a011984"
+      ]
+    }
+  }
+}

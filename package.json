@@ -1,0 +1,53 @@
+{
+  "name": "sports-event-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-platform sports event tracking application",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "turbo dev --filter=@sports-tracker/web",
+    "dev:mobile": "turbo dev --filter=@sports-tracker/mobile",
+    "dev:desktop": "turbo dev --filter=@sports-tracker/desktop",
+    "build": "turbo build",
+    "build:web": "turbo build --filter=@sports-tracker/web",
+    "build:mobile": "turbo build --filter=@sports-tracker/mobile",
+    "build:desktop": "turbo build --filter=@sports-tracker/desktop",
+    "test": "turbo test",
+    "test:unit": "turbo test:unit",
+    "test:e2e": "turbo test:e2e",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
+    "clean": "turbo clean && rm -rf node_modules",
+    "db:generate": "turbo db:generate --filter=@sports-tracker/db",
+    "db:migrate": "turbo db:migrate --filter=@sports-tracker/db",
+    "db:seed": "turbo db:seed --filter=@sports-tracker/db",
+    "type-check": "turbo type-check"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.24",
+    "eslint": "^8.57.0",
+    "eslint-plugin-jest": "^29.0.1",
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.525.0",
+    "react-timezone-select": "^3.2.8",
+    "recharts": "^3.0.2",
+    "sonner": "^2.0.6"
+  }
+}
