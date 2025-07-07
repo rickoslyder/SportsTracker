@@ -77,7 +77,11 @@
       "Bash(pnpm install:*)",
       "Bash(./test-events-api.sh:*)",
       "Bash(pnpm build:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git rm:*)",
+      "Bash(pnpm --filter @sports-tracker/ui build)",
+      "mcp__playwright__browser_navigate_forward"
     ],
     "deny": []
   },

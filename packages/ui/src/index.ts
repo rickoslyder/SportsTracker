@@ -10,6 +10,7 @@ export * from './components/separator';
 export * from './components/checkbox';
 export * from './components/tabs';
 export * from './components/dialog';
+export * from './components/input';
 
 // Export utilities
 export { cn } from './utils/cn';
